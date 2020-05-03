@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Watch It</title>
+        <meta name= 'viewport' content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "box" id = "x">
+                <div class = "thumb">
+                    <img src= "img/orissa3 (2).jpg">
+                </div>
+                <div class = "details">
+                    <div class = "content">
+                        <img src="img/buildings.png">
+                        <h3>Historical</h3>
+                        <p>Lets go back into ages of Maharaja</p>
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "box" id="y">
+                    <div class = "thumb">
+                        <img src= "img/24749590798_b4faa24eeb_k.jpg">
+                    </div>
+                    <div class = "details">
+                        <div class = "content">
+                            <img src="img/mountain.png">
+                            <h3>Nature</h3>
+                            <p>Lets spend a day in lap of Nature</p>
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "box" id="z">
+                        <div class = "thumb">
+                            <img src= "img/Querim_beach_Goa.jpg">
+                        </div>
+                        <div class = "details">
+                            <div class = "content">
+                                <img src="img/nature.png">
+                                <h3>Fun</h3>
+                                <p>Lets do something thrilling </p>
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </body>
+    <script>
+        var x = 'img/orissa3 (2).jpg';
+        document.getElementById('x').addEventListener('mouseover' , function(){
+            //document.body.style.backgroundImage= "url('img/orissa3 (2) - Copy.jpg')";
+            //document.body.style.backgroundSize= "cover";
+            document.body.style.backgroundColor='red';
+
+        });
+        document.getElementById('y').addEventListener('mouseover' , function(){
+            document.body.style.backgroundColor='green';
+        });
+        document.getElementById('z').addEventListener('mouseover' , function(){
+            document.body.style.backgroundColor='skyblue';
+        });
+        document.getElementById('x').addEventListener('mouseout' , function(){
+            document.body.style.backgroundColor='white';
+        });
+        document.getElementById('y').addEventListener('mouseout' , function(){
+            document.body.style.backgroundColor='white';
+        });
+        document.getElementById('z').addEventListener('mouseout' , function(){
+            document.body.style.backgroundColor='white';
+        });
+    </script>
+</html>
