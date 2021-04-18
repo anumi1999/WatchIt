@@ -7,17 +7,18 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
+        <h1 class= "HeadsUp" id="t">Love to travel?? What destination u love to go??</h1>
         <div class = "container">
             <div class = "box" id = "x">
                 <div class = "thumb">
-                    <img src= "img/orissa3 (2).jpg">
+                    <img src= "img/orissa3.jpg">
                 </div>
                 <div class = "details">
                     <div class = "content">
                         <img src="img/buildings.png">
                         <h3>Historical</h3>
                         <p>Lets go back into ages of Maharaja</p>
-                        <a href="#">View More</a>
+                        <a href="/red.html">View More</a>
                     </div>
                 </div>
             </div>
@@ -30,7 +31,7 @@
                             <img src="img/mountain.png">
                             <h3>Nature</h3>
                             <p>Lets spend a day in lap of Nature</p>
-                            <a href="#">View More</a>
+                            <a href="green_page.html">View More</a>
                         </div>
                     </div>
                 </div>
@@ -47,6 +48,19 @@
                             </div>
                         </div>
                     </div>
+                <div class = "box" id="i">
+                    <div class = "thumb">
+                        <img src= "img/24749590798_b4faa24eeb_k.jpg">
+                    </div>
+                    <div class = "details">
+                        <div class = "content">
+                            <img src="img/mountain.png">
+                            <h3>India</h3>
+                            <p>Highlights of Indian States</p>
+                            <a href="green_page.html">View More</a>
+                        </div>
+                    </div>
+                </div>
         </div>
     </body>
     <script>
@@ -55,22 +69,44 @@
             //document.body.style.backgroundImage= "url('img/orissa3 (2) - Copy.jpg')";
             //document.body.style.backgroundSize= "cover";
             document.body.style.backgroundColor='red';
+            document.body.style.color ='white';
+            document.getElementById('t').innerText= 'RUSTY!!!';
 
         });
         document.getElementById('y').addEventListener('mouseover' , function(){
             document.body.style.backgroundColor='green';
+            document.body.style.color ='white';
+            document.getElementById('t').innerText= 'FORESTY!!!';
         });
         document.getElementById('z').addEventListener('mouseover' , function(){
             document.body.style.backgroundColor='skyblue';
+            document.body.style.color ='white';
+            document.getElementById('t').innerText= 'TWISTY!!!';
         });
+        document.getElementById('i').addEventListener('mouseover' , function(){
+            document.body.style.backgroundColor='#ba47f0';
+            document.body.style.color ='white';
+            document.getElementById('t').innerText= 'MYSTRY!!!';
+        })
         document.getElementById('x').addEventListener('mouseout' , function(){
-            document.body.style.backgroundColor='white';
+            document.body.style.backgroundColor='lemonchiffon';
+            document.body.style.color ='black';
+            document.getElementById('t').innerText= 'Love to travel?? What destination u love to go??';
         });
         document.getElementById('y').addEventListener('mouseout' , function(){
-            document.body.style.backgroundColor='white';
+            document.body.style.backgroundColor='lemonchiffon';
+            document.body.style.color ='black';
+            document.getElementById('t').innerText= 'Love to travel?? What destination u love to go??';
         });
         document.getElementById('z').addEventListener('mouseout' , function(){
-            document.body.style.backgroundColor='white';
+            document.body.style.backgroundColor='lemonchiffon';
+            document.body.style.color ='black';
+            document.getElementById('t').innerText= 'Love to travel?? What destination u love to go??';
+        });
+        document.getElementById('i').addEventListener('mouseout' , function(){
+            document.body.style.backgroundColor='lemonchiffon';
+            document.body.style.color ='black';
+            document.getElementById('t').innerText= 'Love to travel?? What destination u love to go??';
         });
     </script>
 </html>

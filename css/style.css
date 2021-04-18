@@ -1,18 +1,19 @@
 body{
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
     font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: lemonchiffon;
+    font-family: cursive;
 }
 .container{
     position:absolute;
-    top:60%;
-    left: 55%;
+    top:50%;
+    left: 50%;
     transform: translate(-50% ,-50%);
-    width: 1000px;
-    height: 100vh;
     display: flex;
     
-
 }
 .container .box{
     position: relative;
@@ -58,6 +59,9 @@ body{
 }
 .container .box:nth-child(3) .details{
     background: rgb(54, 180, 230);
+}
+.container .box:nth-child(4) .details{
+    background: #ba47f0;
 }
 .container .box .details .content{
     position: absolute;
@@ -111,6 +115,11 @@ body{
     border: 2px solid blue;
     color: white;
 }
+.container .box:nth-child(4) .details .content a:hover{
+    background: #6b009c;
+    border: #6b009c;
+    color: #fff;
+}
 @media (max-width: 1000px){
     .container{
         width: 100%;
@@ -123,6 +132,9 @@ body{
     }
     .container .box .thumb{
        display: none;
+    }
+    .container .box .details .content a{
+        display: block;
     }
 }
 @media (max-width: 768px){
@@ -139,8 +151,11 @@ body{
     }
 }
 @media (max-width: 500px){
+    .HeadsUp{
+        padding: 0px;
+    }
     .container{
-        top:0 ;
+        top: auto;
         left: 0;
         transform: translate(0);
     }
@@ -152,4 +167,69 @@ body{
     .container .box .thumb{
        display: none;
     }
+}
+.HeadsUp{
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: cursive;
+}
+.jumbotron{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    background-color: #01ff4d;
+    margin-left: 8%;
+    margin-right: 8%;
+    opacity: 0.8;
+}
+.places{
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgba(255, 255, 255, 0.801);
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+.places .card{
+    height: 20rem;
+}
+.row{
+    padding: 10px;
+}
+.card-img-top{
+    height: 10rem;
+}
+.navbar{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.jumbo{
+    background-color: rgba(255, 255, 255, 0.801);
+    width: 100%;
+}
+.row{
+    padding: 30px;
+}
+.carousel{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    
+    display: block;
+}
+.hero video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
 }
